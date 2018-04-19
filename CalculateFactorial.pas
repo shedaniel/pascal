@@ -1,14 +1,22 @@
 program CalculateFactorial;
 
 var
-  times, sum, i : integer;
+    times, i : integer;
+    answer : longint;
 
 begin
-  readln(times);
-  sum := 1;
-  for i := times downto 1 do
-  begin
-    sum := sum * i;
-  end;
-  writeln(sum);
+    //Set the answer to 1, so we can multiply on it
+    answer := 1;
+
+    //Ask user for the times to multiply
+    readln(times);
+
+    //Calculate the answer
+    for i := 1 to times do
+    begin
+        answer := answer * i;
+    end;
+
+    //Output the sum
+    writeln('The answer to ', times, '! is ', answer, '.');
 end.
