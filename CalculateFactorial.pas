@@ -2,7 +2,7 @@ program CalculateFactorial;
 
 var
     times, i : integer;
-    answer : real;
+    answer : extended;
 
 begin
     //Set the answer to 1, so we can multiply on it
