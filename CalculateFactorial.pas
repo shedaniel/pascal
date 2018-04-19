@@ -2,7 +2,7 @@ program CalculateFactorial;
 
 var
     times, i : integer;
-    answer : longint;
+    answer : real;
 
 begin
     //Set the answer to 1, so we can multiply on it
@@ -18,5 +18,5 @@ begin
     end;
 
     //Output the sum
-    writeln('The answer to ', times, '! is ', answer, '.');
+    writeln('The answer to ', times, '! is ', answer:0:0);
 end.
