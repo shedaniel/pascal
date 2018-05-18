@@ -8,13 +8,12 @@ var
     num : string;
 
 begin
-    readln(num);
+    num := '12345';
     len := length(num);
-    for i := 1 to len - 1 do list[i] := StrToInt(num[i]);
-    //for i := 0 to len - 1 do readln(list[i]);
+    for i := 0 to len - 1 do list[i] := StrToInt(num[i + 1]);
     for i := 0 to 9 do cnt[i] := 0;
     for i := 0 to len - 1 do inc(cnt[list[i]]);
-    for i := 1 to 9 do cnt[i] := cnt[i] + cnt[i - 1];
+    for i := 1 to 9 do cnt[i] += cnt[i - 1];
     for i := 0 to len - 1 do begin
         k := list[i];
         out[cnt[k] - 1] := k;
@@ -34,7 +33,7 @@ begin
     writeln;
     for i := 0 to 9 do cnt[i] := 0;
     for i := 0 to len - 1 do inc(cnt[list[i]]);
-    for i := 1 to 9 do cnt[i] := cnt[i] + cnt[i - 1];
+    for i := 1 to 9 do cnt[i] += cnt[i - 1];
     for i := 0 to len - 1 do begin
         k := list[i];
         out[len - cnt[k]] := k;
