@@ -8,7 +8,7 @@ var
     num : string;
 
 begin
-    num := '12345';
+    readln(num);
     len := length(num);
     for i := 0 to len - 1 do list[i] := StrToInt(num[i + 1]);
     for i := 0 to 9 do cnt[i] := 0;
