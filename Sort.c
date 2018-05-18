@@ -1,7 +1,6 @@
 #include <stdio.h>
-#include <string.h>
 
-int cnt[10], out[213142142], list[213142142];
+int cnt[10], out[21441], list[21441];
 int i, j = 0, k;
 char num[] = "";
 
