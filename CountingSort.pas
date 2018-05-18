@@ -6,7 +6,6 @@ var
 
 begin
     readln(length);
-    writeln('The length is now ', length, '!\nNow please input the numbers 1 by 1.');
     for i := 0 to length - 1 do readln(list[i]);
     for i := 0 to 9 do cnt[i] := 0;
     for i := 0 to length - 1 do inc(cnt[list[i]]);
