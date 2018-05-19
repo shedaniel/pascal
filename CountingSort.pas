@@ -3,7 +3,7 @@ program CountingSort;
 Uses sysutils;
 
 var 
-    cnt, out, list : array[0..9999] of integer;
+    cnt, out, list : array[0..9999] of longint;
     i, j, k, len : integer;
     num : string;
 
